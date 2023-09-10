@@ -130,7 +130,7 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
-		@media screen and (max-width: 2500px) {
+		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
 				font-size: 13pt;
@@ -141,7 +141,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -149,7 +149,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 11pt;
 			}
 
 		}
@@ -165,7 +165,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			body, input, select, textarea {
-				font-size: 8pt;
+				font-size: 8.5pt;
 			}
 
 		}
@@ -295,17 +295,28 @@ input, select, textarea {
 		font-size: 0.7em;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 768px) {
 
 		h2 {
 			font-size: 1em;
 		}
 
-		h3 {
+		h4 {
 			font-size: 0.8em;
 		}
 
 	}
+
+    @media screen and (max-width: 420px) {
+
+		h2 {
+			font-size: 0.8em;
+		}
+
+		h4 {
+			font-size: 0.7em;
+		}
+    }
 
 	sub {
 		font-size: 0.8em;
@@ -2996,15 +3007,6 @@ input, select, textarea {
 			.button {
 				padding: 0;
 			}
-            
-            input[type="submit"].fit,
-		  input[type="reset"].fit,
-		  input[type="button"].fit,
-		  button.fit,
-		  .button.fit {
-			width: 100%;
-            height: 10em;
-		}
 
 		}
 
@@ -3205,11 +3207,11 @@ input, select, textarea {
 				visibility: hidden;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 768px) {
 
 			#header {
 				height: 5em;
-				line-height: 1.25em;
+				line-height: 1.2em;
 			}
 
 				#header nav {
@@ -3238,11 +3240,12 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-            #header {
+			#header {
 				height: 4em;
 				line-height: 1em;
 			}
-			
+
+            
             #header nav a[href="#menu"] {
 				width: 4em;
 				white-space: nowrap;
@@ -3450,7 +3453,7 @@ input, select, textarea {
 
             #banner .imageContainer {
 				position: relative;
-				text-align: center;
+				text-align: right;
 				width: 100%;
 			}
 
@@ -3535,20 +3538,10 @@ input, select, textarea {
 				#banner .inner {
 					width: 100%;
 				}
-            #banner h2 {
-					font-size: 2.5em;
-                    top:40%;
-                    left:40%;
-				}
-
-				#banner p {
-					font-size: 12pt;
-                    text-align: right;
-				}
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 768px) {
 
 			#banner {
 				padding: 5em 2em 4.25em 2em ;
@@ -3564,32 +3557,34 @@ input, select, textarea {
 					}
 
 				#banner h2 {
-					font-size: 1.5em;
-                    top:30%;
-                    left:55%;
+					font-size: 1.8em;
+                    top: 40%;
+                    left:62.5%;
 				}
 
 				#banner p {
-					font-size: 10pt;
-                    text-align: right;
+					font-size: 1em;
+                    top: 70%;
+                    left:14%;
 				}
-                
-                #banner body {
-                    font-size: 0.6em;
-            }
 
 		}
 
-        @media screen and (max-width: 480px) {
-                #banner h2 {
-					font-size: 1.25em;
-                    top:30%;
-                    left:50%;
-                }
-                #banner p {
-					font-size: 7.5pt;
-                    text-align: right;
+        @media screen and (max-width: 480px){
+	           
+            #banner h2 {
+					font-size: 1.2em;
+                    top: 35%;
+                    left:46.5%;
 				}
+
+				#banner p {
+					font-size: 0.8em;
+                    top: 70%;
+                    left:14%;
+				}
+        }
+            
 		body.is-preload #banner .logo {
 			-moz-transform: translateY(0.5em);
 			-webkit-transform: translateY(0.5em);
